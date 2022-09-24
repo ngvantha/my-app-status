@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-sidenav.component.css']
 })
 export class MenuSidenavComponent implements OnInit {
-
+  showFiller = false;
   constructor() { }
 
   ngOnInit(): void {
