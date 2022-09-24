@@ -1,16 +1,16 @@
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
+<mat-drawer-container class="drawer-container" autosize fxLayout="row" fxFlex fxFlexFill>
+  <mat-drawer #drawer class="drawer-sidenav" opened="{{this.showFiller}}" mode="side">
+    <div fxLayout="column" fxFlex fxFlexFill>
       <p>Auto-resizing sidenav</p>
-      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
-      </button>
-    </mat-drawer>
-  
-    <div class="example-sidenav-content">
-      <button type="button" mat-button (click)="showFiller = !showFiller">
-        Toggle sidenav
-      </button>
+      <button mat-raised-button>
+          Toggle extra text
+        </button>
     </div>
-  
-  </mat-drawer-container>
+   
+  </mat-drawer>
+
+  <div class="drawer-sidenav-content" fxLayout="column" fxFlex="70">
+
+  </div>
+
+</mat-drawer-container>
