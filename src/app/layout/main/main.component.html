@@ -1,5 +1,13 @@
-<app-header></app-header>
-<div id="mainContent">
-    <app-menu-sidenav></app-menu-sidenav>
+<div fxLayout="column" fxFlex fxFlexFill>
+    <div fxLayout="row" fxFlex="10">
+        <app-header fxLayout="column" fxFlex fxFlexFill></app-header>
+    </div>
+    <div fxLayout="row" fxFlex>
+        <div id="mainContent" fxLayout="column" fxFlex fxFlexFill>
+            <app-menu-sidenav fxLayout="column" fxFlex fxFlexFill></app-menu-sidenav>
+        </div>
+    </div>
+    <div fxLayout="row" fxFlex="10" fxFlexAlign="end end">
+        <app-footer fxLayout="column" fxFlex fxFlexFill></app-footer>
+    </div>
 </div>
-<app-footer></app-footer>

@@ -55,6 +55,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { CdkMenuModule } from '@angular/cdk/menu';
 import { DialogModule } from '@angular/cdk/dialog';
+import{FlexLayoutModule} from '@angular/flex-layout'
 
 
 @NgModule({
@@ -116,6 +117,7 @@ import { DialogModule } from '@angular/cdk/dialog';
     MatTreeModule,
     OverlayModule,
     DialogModule,
+    FlexLayoutModule,
   ],
   exports: [
   ],
