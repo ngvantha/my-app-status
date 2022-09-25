@@ -17,7 +17,7 @@ export class MenuSidenavComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.showFiller = this.sidenav.currentSidenavStatus.subscribe(status => this.showFiller = status);
+    
   }
 
 }

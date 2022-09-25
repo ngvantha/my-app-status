@@ -1,16 +1,16 @@
-<mat-drawer-container class="drawer-container" autosize fxLayout="row" fxFlex fxFlexFill>
+<mat-drawer-container class="drawer-container" autosize fxLayout="column" fxFlex fxFlexFill>
   <mat-drawer #drawer class="drawer-sidenav" opened="{{this.showFiller}}" mode="side">
     <div fxLayout="column" fxFlex fxFlexFill>
-      <p>Auto-resizing sidenav</p>
-      <button mat-raised-button>
-          Toggle extra text
-        </button>
+      <mat-nav-list dense>
+        <a mat-list-item routerLink="/home" routerLinkActive="activebutton" ariaCurrentWhenActive="page"> HOME</a>
+        <a mat-list-item routerLink="/product" routerLinkActive="activebutton" ariaCurrentWhenActive="page"> PRODUCT</a>
+      </mat-nav-list>
     </div>
-   
+
   </mat-drawer>
 
-  <div class="drawer-sidenav-content" fxLayout="column" fxFlex="70">
-
+  <div class="drawer-sidenav-content" fxLayout="column" fxFlex fxFlexFill>
+    <router-outlet></router-outlet>
   </div>
 
 </mat-drawer-container>
